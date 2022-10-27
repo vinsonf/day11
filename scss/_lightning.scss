@@ -1,0 +1,22 @@
+.lightning{
+    padding: 40px;
+    position: relative;
+    z-index: 200;
+    top: 0px;
+    left: -40px;
+    .light{
+        box-shadow: 4px 4px 4px 4px white;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        z-index: 200;
+        border-bottom: 4px solid white;
+    }
+    .glow{
+        box-shadow: 4px 4px 15px 20px $color1;
+        position: absolute;
+        top: 40px;
+        z-index: 100;
+        width: 100%;
+    }
+}

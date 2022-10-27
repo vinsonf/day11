@@ -1,4 +1,39 @@
 @charset "UTF-8";
+button {
+  padding: 1rem 2rem;
+  background-color: #6c5f93;
+  color: rgb(241, 233, 233) !important;
+  font-size: 20px !important;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slide-in-left {
+  animation-name: slide-in-left;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slide-in-right {
+  animation-name: slide-in-right;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10866,6 +10901,88 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+html, body {
+  min-height: 100%;
+  background-color: rgb(17, 16, 18);
+}
+
+.nav {
+  border: 1rem solid #5ebdd1;
+  padding: 2rem;
+  background-color: #ffa93d;
+  position: sticky;
+  z-index: 20;
+  width: 100%;
+  top: 0;
+}
+
+.hero {
+  background-image: url("https://cf.geekdo-images.com/wjJsquLxPJc2WmvJ7SqVbQ__opengraph/img/Hv1RE3JklSqBvuYJ3wI-qD-TqSc=/fit-in/1200x630/filters:strip_icc()/pic5240569.png");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero h1, .hero .h1 {
+  color: #5ebdd1;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px rgb(17, 16, 18);
+  z-index: 1;
+}
+.hero .dim {
+  background-color: rgb(17, 16, 18);
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.tabs {
+  background-color: #ffa93d;
+  border: 1rem solid #5ebdd1;
+  padding: 2rem;
+}
+.tabs .tab {
+  display: none;
+}
+.tabs.active1 .tab:nth-child(1) {
+  display: block;
+}
+.tabs.active2 .tab:nth-child(2) {
+  display: block;
+}
+.tabs.active3 .tab:nth-child(3) {
+  display: block;
+}
+
+.lightning {
+  padding: 40px;
+  position: relative;
+  z-index: 200;
+  top: 0px;
+  left: -40px;
+}
+.lightning .light {
+  box-shadow: 4px 4px 4px 4px white;
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  z-index: 200;
+  border-bottom: 4px solid white;
+}
+.lightning .glow {
+  box-shadow: 4px 4px 15px 20px #5ebdd1;
+  position: absolute;
+  top: 40px;
+  z-index: 100;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

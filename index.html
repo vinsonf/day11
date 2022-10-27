@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/main.js"></script>
 </head>
+
 <body>
-    <h1>To start this project run these commands in terminal</h1>
-    <ul>
-        <li>npm i</li>
-        <li>npm start</li>
-    </ul>
-    
+    <nav class="nav"></nav>
+    <section class="hero">
+        <h1>This is my site</h1>
+        <!-- <div class="dim"></div> -->
+    </section>
+
+    <section class="tabs active3">
+        <div class="buttons">
+            <button onclick="select1()">1</button>
+            <button onclick="select2()">2</button>
+            <button onclick="select3()">3</button>
+        </div>
+        <div class="lightning">
+            <div class="light"></div>
+            <div class="glow"></div>
+        </div>
+        <div>
+            <div class="tab">
+                <h2>Tab 1</h2>
+                <p>Back to the future 1</p>
+            </div>
+            <div class="tab">
+                <h2>Tab 2</h2>
+                <p>Back to the future 2</p>
+            </div>
+            <div class="tab">
+                <h2>Tab 3</h2>
+                <p>Back to the future 3</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightning">
+        <div class="light"></div>
+        <div class="glow"></div>
+    </div>
+
 </body>
+
 </html>
